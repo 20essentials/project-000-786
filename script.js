@@ -6,7 +6,6 @@ function magnify(imgID, zoom) {
   const glass = document.createElement('div');
   glass.className = 'img-magnifier-glass';
   img.parentElement.insertBefore(glass, img);
-
   Object.assign(glass.style, {
     backgroundImage: `url('${img.src}')`,
     backgroundRepeat: 'no-repeat',
